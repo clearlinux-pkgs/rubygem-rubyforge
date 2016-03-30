@@ -4,7 +4,7 @@
 #
 Name     : rubygem-rubyforge
 Version  : 2.0.4
-Release  : 5
+Release  : 6
 URL      : https://rubygems.org/downloads/rubyforge-2.0.4.gem
 Source0  : https://rubygems.org/downloads/rubyforge-2.0.4.gem
 Summary  : No detailed summary available
@@ -62,45 +62,23 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
 pushd %{buildroot}%{gem_dir}/gems/rubyforge-2.0.4
-ruby -v -I.:lib test*/test_*.rb
+ruby -v -I.:lib:test test*/test_*.rb
 popd
 
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/rubyforge-2.0.4.gem
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Net/HTTP/cdesc-HTTP.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Net/HTTP/old_use_ssl%3d-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Net/HTTP/use_ssl%3d-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Net/cdesc-Net.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/agent_class-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/boundary_data_for-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/cdesc-Client.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/debug_dev-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/execute-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/get_content-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/new-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/post_content-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/query_string_for-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/Client/ssl_verify_mode-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/RubyForge/cdesc-RubyForge.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Time/cdesc-Time.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Time/old_utc-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/Time/utc-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/page-History_txt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/page-Manifest_txt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/rubyforge-2.0.4/ri/page-README_txt.ri
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/History.txt
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/Manifest.txt
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/README.txt
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/bin/rubyforge
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/lib/rubyforge.rb
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/lib/rubyforge/client.rb
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/test/test_rubyforge.rb
-/usr/lib64/ruby/gems/2.2.0/gems/rubyforge-2.0.4/test/test_rubyforge_client.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/rubyforge-2.0.4.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/rubyforge-2.0.4.gem
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/History.txt
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/Manifest.txt
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/README.txt
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/bin/rubyforge
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/lib/rubyforge.rb
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/lib/rubyforge/client.rb
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/test/test_rubyforge.rb
+/usr/lib64/ruby/gems/2.3.0/gems/rubyforge-2.0.4/test/test_rubyforge_client.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/rubyforge-2.0.4.gemspec
 
 %files bin
 %defattr(-,root,root,-)
