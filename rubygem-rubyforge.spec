@@ -4,7 +4,7 @@
 #
 Name     : rubygem-rubyforge
 Version  : 2.0.4
-Release  : 6
+Release  : 7
 URL      : https://rubygems.org/downloads/rubyforge-2.0.4.gem
 Source0  : https://rubygems.org/downloads/rubyforge-2.0.4.gem
 Summary  : No detailed summary available
